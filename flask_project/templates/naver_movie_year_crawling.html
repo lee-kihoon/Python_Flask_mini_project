@@ -1,0 +1,29 @@
+{% extends "naver_movie_year.html" %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+<ul>
+  <div class="container">
+    <div class="card card-body bg-light">
+    <p>검색된 데이터 수 : {{count_rows[0][0]}}</p>
+    </div>
+    <br>
+  </div>
+{% if res %}
+{% for i in res %}
+<div class="container">
+  <div class="card card-body bg-light">
+  {% for j in i %}
+    {{ j  }}<br>
+  {% endfor %}
+  </div>
+  <br>
+</div>
+{% endfor%}
+{% else %}
+    <p> 데이터가 존재하지 않습니다. </p>
+{% endif %}
+</ul>
+{% endblock %}

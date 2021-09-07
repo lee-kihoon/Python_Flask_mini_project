@@ -1,0 +1,14 @@
+<ul>
+  <li class="active"><a href="{{ url_for('index') }}">Home</a></li>
+  <li class="drop-down"><a>Naver Movie Data</a>
+    <ul>
+      <li><a href="{{ url_for('naver_movie_name') }}">영화명 조회</a></li>
+      <li><a href="{{ url_for('naver_movie_star') }}">평점 조회</a></li>
+      <li><a href="{{ url_for('naver_movie_story') }}">줄거리 키워드 조회</a></li>
+      <li><a href="{{ url_for('naver_movie_dir') }}">감독명 조회</a></li>
+      <li><a href="{{ url_for('naver_movie_year') }}">연도별 조회</a></li>
+    </ul>
+  </li>
+  <li><a href="{{ url_for('movie_review') }}">Naver Movie Selenium</a></li>
+  <li><a href="{{ url_for('analysis_movie_data') }}">Data Analysis</a></li>
+</ul>

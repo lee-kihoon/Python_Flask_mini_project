@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Video Analysis</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/venobox/venobox.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/owl.carousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Rapid - v2.3.1
+  * Template URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto">Video Analysis</h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="main-nav d-none d-lg-block">
+        {% include 'menu.html' %}
+      </nav><!-- .main-nav-->
+
+    </div>
+  </header><!-- End Header -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <section id="hero" class="clearfix h-50">
+  </section><!-- End Hero -->
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h3>Data Analysis</h3>
+        <p>크롤링 한 영화에 대한 다양한 시각화 및 분석.</p>
+      </header>
+
+      <div class="row">
+
+        <div class="col-md-6 col-lg-6 wow bounceInUp" data-aos="zoom-in" data-aos-delay="100">
+          <div class="box">
+            <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+            <h4 class="title"><a href="{{ url_for('analysis1') }}"> 등록된 영화 갯수 상위10명 감독 평균 별점</a></h4>
+            <p class="description"> 네이버 영화에 등록된 영화갯수가 가장 많은 상위 10명의 감독의 별점 평균 </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="box">
+            <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+            <h4 class="title"><a href="{{ url_for('analysis2') }}">등록된 영화 갯수가 가장 많은 감독 </a></h4>
+            <p class="description">네이버 영화페이지에 등록된 영화갯수가 가장 많은 상위 10명의 감독</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 wow" data-aos="zoom-in" data-aos-delay="100">
+          <div class="box">
+            <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+            <h4 class="title"><a href="{{ url_for('analysis3') }}">넷플릭스 연도별 컨텐츠 등록 추이</a></h4>
+            <p class="description">연도별로 등록된 넷플릭스의 컨텐츠 분석.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="200"">
+          <div class=" box">
+          <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+          <h4 class="title"><a href="{{ url_for('analysis4') }}">Movies의 재생시간 추이 데이터</a></h4>
+          <p class="description">넷플릭스에서 영화들의 재생시간 분석.</p>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </section> <!-- End Services Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="section-bg">
+    {% include 'footer.html' %}
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='assets/vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/jquery.easing/jquery.easing.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/counterup/counterup.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/venobox/venobox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/owl.carousel/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/waypoints/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+</body>
+
+</html>
