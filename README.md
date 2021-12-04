@@ -30,3 +30,5 @@
 https://youtu.be/C4P8ZG3IfYA
 * 파이썬 크롤링 실행 영상
 https://youtu.be/kkgpO4OQBDY
+
+# 상세한 내용은 깃허브내의 PPT 및 소스코드를 참고해주세요.
